@@ -5,7 +5,7 @@ import javax.swing.*;
 public class DIGITAL implements Runnable{
 
 	JFrame f;
-	 JLabel l,l1,l2;
+	 JLabel l,l1;
 	Thread t = null;
 	String timeString;
 	JButton b,b1;
@@ -41,17 +41,12 @@ DIGITAL(){
 	s2.setBackground(Color.black);
 	s2.setBorder(BorderFactory.createLineBorder(Color.GREEN,2));
 	
-	JLabel l2 = new JLabel("ABHISHEK SANGHANI",SwingConstants.CENTER);
-	l2.setForeground(Color.white);
-	
 	b1=new JButton("JAVA PROGRAMMING LANGUAGE");
 	b1.setBorder(BorderFactory.createLineBorder(Color.MAGENTA, 3, true));
 	
 	s1.add(l1);								//TimePanel................
 	s1.setLayout(new GridLayout(3,1));
-	s1.add(b);
-
-	s2.add(l2);								//NamePanel...............
+	s1.add(b);								//NamePanel...............
 	s2.setLayout(new GridLayout(2,1));
 	s2.add(b1);
 	
